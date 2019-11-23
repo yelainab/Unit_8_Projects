@@ -6,16 +6,22 @@
    Case Problem 1
 
    Tables Style Sheet
-   Author: 
-   Date:   
+   Author: Yelaina buford
+   Date:   11/22/19
 
    Filename:         mi_tables.css
 
 */
 
 /* Table Styles */
-
-
+table.pricing{
+   background: linear-gradient(rgb(190, 215, 255), black);
+   border: 1px solid gray;
+}
+table.pricing td, table.pricing th{
+   border: 3px solid gray;
+   
+}
 
 /* Column Styles */
 

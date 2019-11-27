@@ -41,8 +41,11 @@
       background: rgb(255, 235, 178);
       border: 2px solid gray;
    }
-   data-date{
-      position: absolute (0,0);
+   [data-date]::before{
+      content: attr(data-date);
+      position: absolute;
+      top: 0px;
+      left: 0px;
       width: 40%;
       padding: 5px;
    }
@@ -58,6 +61,7 @@
 @media screen and (min-width: 641px){
    table{
       background: url(lht_photo1.png) no-repeat bottom right;
+      background-size: 40%;
       border: 6px double rgb(154, 64 ,3);
       border-collapse: collapse;
       margin-top: 20px;
@@ -72,6 +76,7 @@
       font-weight: normal;
       padding: 5px;
       vertical-align: top;
+      width: 14.28%;
       word-wrap: break-word;
    }
    td{
@@ -80,6 +85,16 @@
    }
    [data-date^="feb"]{
       background: rgba(232, 214, 148, 0.6);
-      box-shadow: grey 0px, 0px, 20px inset;
+      box-shadow: grey 0px 0px 20px inset;
+   }
+   caption{
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 1.2em;
+      letter-spacing: 3px;
+   }
+   thead{
+      background: rgb(154,64,3);
+      color: white;
    }
 }
